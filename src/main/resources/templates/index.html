@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body class="container">
+	<nav class="navbar bg-dark navbar-dark navbar-expand-lg">
+		<a class="navbar-brand" href="#">Logo</a>
+		<div class="navbar-nav w-100 ml-auto" th:each="menu : ${menus}">
+			<a class="nav-link" th:href="${menu.url}" th:text="${menu.label}"></a>
+		</div>
+	</nav>
+	홈페이지 각 페이지의 독특한 어떤 내용
+</body>
+
+</html>
